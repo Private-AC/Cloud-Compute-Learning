@@ -22,4 +22,4 @@ Now we should try to check for the server rechabality outside VM within Computer
 
 > We must change the firewall settings in VM 
     Command - firewall-cmd --add-service=http --permanant
-> Now you can see the test page working on your local browser
+> Now you can see the test page working on your local browser as you refresh the page.
