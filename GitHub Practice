@@ -1,0 +1,59 @@
+Date 09 Nov 2024
+
+I had learnt how to create a repositoriy in github and work locally and push it back to github.
+
+Steps taken to do so:
+    > Open a Github account.
+    > Create a new repository in git.
+    > Similarly by working on local VM 
+          > Install git on linux machine 
+          > Create a directoty to work with Git
+          > Change to the directory and now start working with Git
+
+    > First Initialize the folder with git 
+          > Command " git init " with the folder where you need to work
+          > Create the files on which you need to work "that could be any files like code file, text fine or even a simple text file"
+          > Now add the files to the git so that we can work and commit the work progress
+          > Command " git add files to be added "
+          > make the nessary changes or leave it as such and commit the file unless you commit the file it will stay under "Staging"
+          > To commit a file command " git commit -m "message for commit" " if the "-m" is not mentioned an editor will come up you can add a message for your commit.
+
+    > Now we are trying to connect to a remote repository which was created eariler
+          > Copy the url of the repo
+          > Command to add the remote repo to local machine " git remote add <name of the repo your choice> <copied url> "
+          > To verify if the repo is added to your local machine check with command " git remote -v "
+          > you can see the repo that was in the Github on your local manine
+          > Now we need to push the file and codes to the local working file to github so that if there are any team working on the same file can work together 
+          > Command " git push -u <name mentioned for your repo eariler> <branch name by default i had worked on master> "
+> errors encountered To https://github.com/Private-AC/First-Repo.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Private-AC/First-Repo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+          > To fix the above issue we and alternate command " git pull github master --allow-unrelated-histories "
+          > After the above work around i was able to connect to the git repo and working on it
+          > later just tested some files updating and pushing the files to github.
+          > Next tested pulling the git repo from Github after making changes in the Github.
+          > Command to pull a repo " git pull <url> or git pull "
+
+    > Now lets try cloning the code to another VM and try pushing the updates to Github.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
