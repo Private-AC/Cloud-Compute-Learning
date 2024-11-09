@@ -32,6 +32,8 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+** Usually this error occurs only if you have commited anything in either local repo or remoterepo **
           > To fix the above issue we and alternate command " git pull github master --allow-unrelated-histories "
           > After the above work around i was able to connect to the git repo and working on it
           > later just tested some files updating and pushing the files to github.
@@ -39,7 +41,11 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
           > Command to pull a repo " git pull <url> or git pull "
 
     > Now lets try cloning the code to another VM and try pushing the updates to Github.
-
+            > Command " git clone <url> "
+            > Now all the updates from Github repo will be downloaded in to your local machine 
+            > You can now work on the files nessary and then push the commit to Github.
+            > Again we can pull the code from Github if anyone has made changes to the repo.
+                
 
 
 
