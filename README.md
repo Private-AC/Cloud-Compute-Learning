@@ -9,3 +9,6 @@ Cloud Computing Course
   **Need to Practice creating own git server on a local machine, & work on it**
 07 Nov 24  > Webservers Basics (Types of websites static & dynamic, Web Framework, Apache Web server configuration, viewing logs, setting up configuration file, configuration of multiple webserver)
   **Need to practice webservers & delpoy simple webserver on the local machine**
+
+09 Nov 24 > Git practice completed.
+
