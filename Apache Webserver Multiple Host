@@ -1,0 +1,72 @@
+Hosting multiple website in a single Apache Web Server
+
+we have two different ways:
+
+1st method:
+
+> Initial steps for the installation of the server is similar as installation of Apache Server
+
+Now we need to configure the apache server file which is located in /etc/httpd/conf/httpd.conf
+
+        > Find ServerName in the configuration file and in the next line servername and fully qualified domain name and port no 
+                ServerName www.houses.com:80
+        > After that line add the below line of code to run multiple website
+            > 1st website    
+                <VirtualHost *:80>
+                 ServerName www.houses.com
+                 DocumentRoot /var/www/houses
+                </VirtualHost>
+            > 2nd website    
+                <VirtualHost *:80>
+                 ServerName www.oranges.com
+                 DocumentRoot /var/www/oranges
+                </VirtualHost>
+        > Now we need to add the configuration files of both websites in a directory under /var/www/
+              > 1st website   
+                    > /var/www/houses/index.html  (I have added only html file for testing)
+              > 2nd website   
+                    > /var/www/oranges/index.html  (I have added only html file for testing)
+        > Once all this is done we need to make changes in the hosts file under /etc/hosts
+              > Add a new entry for the two websites  
+                    > 192.168.0.109    www.houses.com
+                    > 192.168.0.109    www.oranges.com
+        > After all the initilization restart the apache server 
+              > Command " systemctl restart httpd " or " service httpd restart "
+
+
+2nd method:
+
+Changes needs to made in the configuration files as mentioned below 
+
+    > get into /etc/httpd/conf/ directory 
+          > create a file called houses.conf and insert the below lines
+                <VirtualHost *:80>
+                 ServerName www.houses.com
+                 DocumentRoot /var/www/houses
+                </VirtualHost>
+          > > create another file called oranges.conf and insert the below lines
+                <VirtualHost *:80>
+                 ServerName www.oranges.com
+                 DocumentRoot /var/www/ornages
+                </VirtualHost>
+    > After making the above changes get into /etc/httpd/conf/httpd.conf
+          > Add these lines in the end of the configuration file
+              Include conf/houses.conf
+              Include conf/oranges.conf
+    > After all the initilization restart the apache server 
+              > Command " systemctl restart httpd " or " service httpd restart "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
