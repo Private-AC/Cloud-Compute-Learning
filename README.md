@@ -1,6 +1,5 @@
 In this repo i am all in all going to do a complete documentation of what ever i learn everyday in the course of Cloud Computing.
 
-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
 
 Cloud Computing Course
   > Devops Pre-requesties
@@ -12,5 +11,6 @@ Cloud Computing Course
 07 Nov 24  > Webservers Basics (Types of websites static & dynamic, Web Framework, Apache Web server configuration, viewing logs, setting up configuration file, configuration of multiple webserver)
   **Need to practice webservers & delpoy simple webserver on the local machine**
 
-09 Nov 24 > Git practice completed.
+09 Nov 24 > Git practice and documentation.
 
+10 Nov 24 > Apache Webserver hosting and documentation.
