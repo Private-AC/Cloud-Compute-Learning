@@ -2,7 +2,7 @@ We are going to install an Apache Web Server on a Linux Virtual Machine
 For this set up i am going to use Virtual Box for deploying VM.
 We are going to deploy CentOS 9 on our Virtual Box with Network set to Bridge Adapter default settings.
 
-After deploying CentOS on the VM.
+After deploying CentOS on VM.
 
 > Install httpd or appache server 
     command - sudo yum install httpd
@@ -23,3 +23,5 @@ Now we should try to check for the server rechabality outside VM within Computer
 > We must change the firewall settings in VM 
     Command - firewall-cmd --add-service=http --permanant
 > Now you can see the test page working on your local browser as you refresh the page.
+
+
