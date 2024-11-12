@@ -14,3 +14,5 @@ Cloud Computing Course
 09 Nov 24 > Git practice and documentation.
 
 10 Nov 24 > Apache Webserver hosting and documentation.
+
+11 Nov 24 > Apache Webserver hosting and Python Flask Application delpoymment.
