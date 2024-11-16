@@ -1,0 +1,20 @@
+Installation of Apache Tomcat Server.
+
+Go to Apache home page and navigate to downloads page and select the required version to Apache and Copy the link.
+    > Now on to the VM 
+    > wget url
+
+It will download the tar file of the Apache Tomcat Server.
+    > extract the tar file > tar -xvf apachefile
+    > After extracted Navigate to extracted directory and within the directory find bin folder to start and shutdown the server.
+    > ./bin/startup.sh to start the Tomcat server
+    > ./bin/shutdown.sh to stop the Tomcat Server
+
+Within the conf directory we can find server.xml file to make any changes in the port no or any other config changes.
+
+Within the conf file we find the web.xml file is where we can configure our web application.
+
+We can also find logs files and webapps is the place we can place all the configuration and support files in the server
+
+
+
