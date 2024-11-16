@@ -23,3 +23,7 @@ Cloud Computing Course
 
 13 Nov 24 > Practice on MySQL Server.
 
+14 Nov 24 > Practice on installation, setting up sql server on a local VM.
+
+
+
