@@ -25,5 +25,9 @@ Cloud Computing Course
 
 14 Nov 24 > Practice on installation, setting up sql server on a local VM.
 
+16 Nov 24 > Complete practice on SQL & Apache Tomcat Servers and Documentations of the Same.
+
+
+
 
 
