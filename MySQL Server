@@ -1,0 +1,90 @@
+Just Basics of MySQL Server
+
+  Installation of SQL Server.
+    > wget url from offical page
+    > rpm -ivh package.rpm 
+    > yum install -y mysql_server
+
+  If the repo and package is available in the system we can just install 
+    > yum install -y mysql_server
+
+  start the services using 
+    > systemctl start sqld
+    > status check the same 
+
+  Now check fo the log files to get the user login for the server.
+    > cat /var/log/sql/mysqld.log
+
+  To login to the SQL Server
+    > mysql -u username -p password which will be located in the log file
+
+  Some times it will require to change the password for the root user to do so 
+    > ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+
+  Now we can start using the server
+
+    Some basic commands to work with SQL Server.
+
+        > SHOW DATABASES; (To view the list of databases available we can host multiple DB of a single SQL Server)
+        > CREATE DATABASE dbname; (To create a new DB on the Server)
+        > USE dbname; (To start working on the DB server)
+        > CREATE TABLE tbname ( Name varchar(255), Age int, Location varchar(255) ); {This is a command that is used to create table with the details in to it}
+        > SHOW TABLES; (To verify the tables on the DB)
+        > INSERT INTO tbname values ("John", 45, "UK"); {This is the command to insert the value to table}
+        > SELECT * FROM tbname; (To view the inserted vaules in the table)
+
+    Creation of user in the DB.
+      By default root has all the access and permission on all the DB's by default.
+
+        Adding user to the DB.
+
+           > CREATE USER 'ram'@'localhost' IDENTIFIED BY 'password' (For this the user can only login for the localhost)
+                
+           > CREATE USER 'ram'@'192.168.0.109' IDENTIFIED BY 'password' (Login to the server from internet with specific IP)
+      
+           > CREATE USER 'ram'@'%' IDENTIFIED BY 'password' (Login to the server from all the system)
+
+      Privileges to the users.
+
+          systax: GRANT <PERMISSION> ON <DATABASE.TABLE> TO 'ram'@'localhost';
+
+      Privileges 
+
+        All PRIVILEGES  ------  Grants full access
+        CREATE      ----------  create DB
+        DROP        ----------  delete DB
+        DELETE      ----------  delete row from table
+        INSERT      ----------  insert row into table
+        SELECT      ----------  read/query table
+        UPDATE      ----------  update rows in table
+
+      Some Examples for access.
+
+          > GRANT SELECT ON database.table TO 'ram'@'localhost';  (Single permission)
+
+          > GRANT UPDATE, DELETE ON database.table TO 'ram'@'localhost'; (Multiple Permission)
+
+          > GRANT ALL PRIVILEGES ON *.* TO 'ram'@'localhost'; (Full access similar to root)
+
+      To list out the permission for a user.
+
+        > SHOW GRANTS FOR 'ram'@'localhost';
+
+
+      To revoke or remove the access to the 
+
+          > REVOKE SELECT ON database.table FROM 'ram'@'localhost';  (Single permission)
+        
+
+          
+
+
+
+
+
+
+
+
+
+
+      
