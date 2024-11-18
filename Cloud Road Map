@@ -1,0 +1,67 @@
+This is the complete roadmap to land in a Cloud Engineer Job in 3-4 Months.
+
+1) IT Fundamentals
+        > Operating Systems
+        > Networking 
+        > Security (Snyk Platform) 
+        > Programming (Python)
+        > Databases (MySQL & NoSQL)
+        > Virtualization
+
+2) Selecting Cloud Platform 
+    Which is AWS in My case
+
+3) Mastering Essential Cloud Concepts
+        > Elastic Cloud Compute (EC2)
+        > S3 
+        > Identity & Access Managment (IAM)
+        > Virtual Private Cloud (VPC)
+        > Amazon Bedrock 
+
+4) Hands on Projects
+        > Build a Portfolio Website (Your own website to show off your work Use S3 to host it, create website file such as HTML, CSS, Javascript in S# bucket and host it)
+        > System for tracking tasks 
+        > App for sharing images 
+
+5) AWS Certification 
+        > Cloud Practitioner
+        > Solutions Architect
+
+6) Essential Cloud Tools
+        > Infrastructure as Code (IAC) Terraform
+        > CI/CD Pipelines
+
+7) Advance AWS Services
+        > AWS Lambda
+        > API Gateway
+        > Dynamo DB
+        > Sagemaker
+
+8) Complex Project Building 
+        > Event Driven Notification 
+        > Book Recomendation Engine
+
+9) Building your Online Presence
+        > Setting Up LinkedIn profile (Aspiring Cloud Engineer)
+        > Writting Summary (Tell people to what pulled you to learn cloud engineering and how your putting things into practice)
+        > Showcasing Projects (Document Everything your building)
+        > Projects Sections
+
+10) Landing Cloud Job
+        > Target right Entry level jobs (Cloud Engineer, Jr Cloud Engineer, Cloud Support Associate, Platform Engineer or DevOps)
+        > Resume Needs to tell a clear story (Show how you used them to solve problems, Study JD Carefully and Create Different versions of resumes)
+        > Connect with people with the industry (Join community, networking, message recruiters)
+        > With Interviews They require specific preparation and come up with detail example from the projects you had built.
+        > Connect your technical knowledge to business value
+
+
+
+
+
+
+
+
+
+
+
+
