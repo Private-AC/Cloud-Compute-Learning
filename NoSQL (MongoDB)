@@ -1,0 +1,20 @@
+MongoDB is a document based database which stores data sets in the form json document.
+
+Installation of MongoDB 
+      > wget <mongodb url>
+      > unpack the rpm package 
+      > Or else extract the tar file 
+
+Install the Mogodb Server
+      > yum install -y mongodb-org
+      > start the service mongod
+      > Check the status of the service
+
+Working on the mongo server
+      > mongod
+List the databases 
+      > show dbs
+use or switch the database to write into it 
+      > use db_name
+to insert the content on to the database server
+      > 
