@@ -27,6 +27,10 @@ Cloud Computing Course
 
 16 Nov 24 > Complete practice on SQL & Apache Tomcat Servers and Documentations of the Same.
 
+18 Nov 24 > SSL & TLS Basics, Symetric & Asymetric encriptions technique, private & public key implementations.
+
+20 Nov 24 > YAML basics & JSON PATH basics.
+
 
 
 
