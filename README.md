@@ -31,6 +31,10 @@ Cloud Computing Course
 
 20 Nov 24 > YAML basics & JSON PATH basics.
 
+21 Nov 24 > Revision on JSON path and pratical 
+
+22 Nov 24 > A small demo of application deployment on a local host & Virtual box configuration 
+
 
 
 
