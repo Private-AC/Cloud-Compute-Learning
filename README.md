@@ -1,7 +1,9 @@
-In this repo i am all in all going to do a complete documentation of what ever i learn everyday in the course of Cloud Computing.
+This repo is all in all learning undergone by me to become a Cloud Engineer.
 
+Have documented completly which ever topics that was learnt everyday in the course of Cloud Computing.
 
-Cloud Computing Course
+**Cloud Computing Course**
+
   > Devops Pre-requesties
       > Linux Basics
       > Networking Basics
