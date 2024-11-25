@@ -1,0 +1,20 @@
+> Basic of Encription
+> How does encription works in a broswer
+> Different types of encription and difference between them
+     > Symetric 
+     > Asymetric
+> Public and private keys in encription
+> Working of both Symetric and Asymetric encription
+
+> How do browsers check for the security check for the security of the certificate if at all is it a selfsigned or verified by Certificate Authroity (CA)
+        > Some of the common Certificate Authority (CA) providers are Symantec, Digicert, GlobalSign & etc
+        > These CA providers are embedded within the browsers so that they are verified on the go for the users security.
+> File format for the Public and Private keys
+      > Public Key                 > Private Key
+        > *.cert                      > *.key
+        > *.pem                       > *-key.pem
+
+Lab's on the same for practice.
+
+
+
