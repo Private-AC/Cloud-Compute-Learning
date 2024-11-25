@@ -16,5 +16,17 @@ List the databases
       > show dbs
 use or switch the database to write into it 
       > use db_name
-to insert the content on to the database server
-      > 
+to insert adocument on to the database server we need to add a collection
+      > db.createcollection new_collection
+Now we can insert the data to the collection in Json format
+      > db.new_collection.insert ({
+            "name": "Rama"
+            "age": 25
+            "location": "Mysore"
+            "salary": "50000"
+            })
+To reterive data from database
+      > db.collection_name.find() "Each document in the database has a unique ID associated with it"
+
+To filter a search from database and get specific output
+      > db.collection_name.find({"name": "Rama"}) "Like wise we can add fileter in the find section and get the accurate data required"
