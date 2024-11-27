@@ -37,6 +37,22 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 22 Nov 24 > A small demo of application deployment on a local host & Virtual box configuration 
 
+23 & 24 Nov 24 > just wasted all my time in trying to install MongoDB latest but no luck with the 8.0 version 
+
+25 Nov 24 > Reconfigured all the VM's by deleting the the complete VM and creating new one's.
+
+26 Nov 24 > Completed with the installation complecation of the MongoDB with version 4.0, tried the demo application ok the Kodekloud static application deployment and was facing errors with the database connection     
+            figured out that the issue was not in the code and forgot to istall some dependencies which was not followed by me. 
+
+
+
+
+
+
+
+
+
+
 
 
 
