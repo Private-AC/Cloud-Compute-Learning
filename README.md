@@ -44,6 +44,15 @@ Have documented completly which ever topics that was learnt everyday in the cour
 26 Nov 24 > Completed with the installation complecation of the MongoDB with version 4.0, tried the demo application ok the Kodekloud static application deployment and was facing errors with the database connection     
             figured out that the issue was not in the code and forgot to istall some dependencies which was not followed by me. 
 
+27 Nov 24 > Virtual Box in detail such as Virtual Box Installation, VM Deployment, Networking, Accessing VM, Setting up Multiple network adapters in VM, etc.
+
+28 Nov 24 > Vagrant basics Installation, Delployment, Changing the Configuration file, etc.
+
+** Devops Pre-requesites Complete **
+
+
+        
+
 
 
 
