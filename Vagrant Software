@@ -1,0 +1,25 @@
+Vagrant is an automation tool used to install the desired version of an OS through VirtualBox, VMware and etc.
+
+> Installation and setup 
+
+    > Installation Procress 
+            > follow the link https://www.vagrantup.com/
+            > Download and Install 
+
+    > Setup of the vagrant to install the desired OS
+            > Link https://portal.cloud.hashicorp.com/vagrant/discover
+            > Select and copy these kind of line for the requied OS "vagrant init ubuntu/trusty64 --box-version 20191107.0.0"
+            > Verify the vagrant file and we can make the nessary changes to the Configuration file.
+            > By looking into the complete configuration file we can make the desired changes to the file like configure the VM, Networking, Shared files, Memory, CPU, and also run a custom script.
+
+
+
+
+
+
+
+
+
+
+
+
