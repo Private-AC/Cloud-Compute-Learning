@@ -50,6 +50,10 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 ** Devops Pre-requesites Complete **
 
+**Started with Terraform Basics **
+
+29 Nov 24 > Started with Terraform Basics like its features and how it is widely used across different platforms and resourses, etc.
+
 
         
 
