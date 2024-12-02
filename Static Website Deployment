@@ -1,0 +1,25 @@
+Deployed a LAMP Stack website from a localhost with all the services built on the same server.
+
+LAMP Stack (Linux Apache MongoDB Php)
+
+I had done only the deployment part of the code and had got the code from Github  kodekloudhub/learning-app-ecommerce 
+
+Requirements:
+      > Apache, MariaDB, Php-sqlnd
+
+Lets get into deployment:
+
+      > Install firewall and enable it.
+      > Install MariaDB and enable it.
+      > Enable the firewall to open for the port on which mariadb is working i.e. 3306.
+      > Configure the Database with user name, password, and permissions for the DB.
+      > A small script needs to loaded into the database please follow the readme file from the project file.
+      > Webpage configuration as we are going to deploy a php server we need to change the index.html to index.php in the configuration file of the http serivce.
+      > Download the code from Git hub and place in the /var/www/html/.
+      > create a .env file into the root folder of the code and insert the DB config files init.
+      > A small code chage needs to made from  the main file of index.html to load the .env code.
+
+Once done we can verify the procress bu curling or load the website in the local browser with http://localhost.
+
+
+
