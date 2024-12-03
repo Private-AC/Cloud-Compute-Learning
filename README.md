@@ -54,19 +54,6 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 29 Nov 24 > Started with Terraform Basics like its features and how it is widely used across different platforms and resourses, etc.
 
+2 Dec 2024 > Virtual Box Networking and Webserver delpoyment with Database.
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+3 Dec 2024 > VirtualBox Port Forwarding
