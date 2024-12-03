@@ -4,6 +4,11 @@ LAMP Stack (Linux Apache MongoDB Php)
 
 I had done only the deployment part of the code and had got the code from Github  kodekloudhub/learning-app-ecommerce 
 
+            > Delpoyed a webserver on the newly installed VM with multiple adapters enabled i.e. NAT and bridge adapters and was able to access the the webserver on the localhost of the VM as well as also able to access the webserver,
+              on the host browser since the bridge adapter was enabled. (Note: that webserver was deployed with the help of kodekloudhub/learning-app-ecommerce code)
+            > The deployment type was All in one setup like the webserver and database server in a single VM.
+            > Webserver used was Apache and the code was in Php, Database used us MariaDB.
+
 Requirements:
       > Apache, MariaDB, Php-sqlnd
 
@@ -21,5 +26,6 @@ Lets get into deployment:
 
 Once done we can verify the procress bu curling or load the website in the local browser with http://localhost.
 
-
-
+Problems faced during the delpoyment:
+            > Was not able to find the depencenices file on .env and checked it there was a spelling error in it and rectified it.
+            > While deploying the webserver i was not able to connect to the database and found that it was related to the dependencies and was rectified by installing.
