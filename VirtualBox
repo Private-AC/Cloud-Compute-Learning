@@ -1,0 +1,26 @@
+Installation of VirtualBox.
+
+Installation of VM of your choice and configuring it.
+
+Fretures of VirtualBox
+      > Cloning
+      > Snapshots
+      > logs 
+
+Different types of networks in virtualbox:
+          > NAT
+          > Bridge
+          > NAT Network
+          > Host-Only
+          > Internal Network
+
+VirtualBox Networking:
+    > was unable to add multiple adapters on the virtual box even after enabling adapter 2,3,4 but was not showing up on the VM.
+    > Tried to add multiple apadters and reboot the VM but the adaptors was not showing up on the VM.
+    > Tried to update the VirtualBox to the latest version but no luck
+    > As a final step added a additional new VM on to VirtualBox but this time has enabled adapter 2,3,4 and tried to configure the new VM and adapters.
+    > The solution worked.
+
+Port Forwarding:
+    > Was not able to forward the port to access the VM in the local host and tried with multiple 
+    > Then figured out on the problem with the portforwarding and figured out that the VM and host is on different network range and only 127.0.0.1 is common between the networks and made the required changes and was able to access the VM locally.
