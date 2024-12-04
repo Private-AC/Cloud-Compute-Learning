@@ -56,4 +56,8 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 2 Dec 2024 > Virtual Box Networking and Webserver delpoyment with Database.
 
-3 Dec 2024 > VirtualBox Port Forwarding
+3 Dec 2024 > VirtualBox Port Forwarding, Terraform basics and was facing error in deploying the webserver.
+
+
+
+
