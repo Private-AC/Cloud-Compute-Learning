@@ -58,6 +58,12 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 3 Dec 2024 > VirtualBox Port Forwarding, Terraform basics and was facing error in deploying the webserver.
 
+4 Dec 2024 > Tried deploying Webserver in to different and connect them accordingnly but no luck on that only the webserver was working and had a permission issue with DB.
+
+5 Dec 2024 > Terraform Variables in detail 
+
+6 Dec 2024 > 
+
 
 
 
