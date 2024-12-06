@@ -1,0 +1,24 @@
+Webserver Deployment on two different VM's 
+
+It is similar to the Pervious Webserver Deployment but other there i had deployed all the services on a single which are Php webserver and MariaDB.
+
+The webpage was working as to be expected.
+
+But when i tried the same experiment on two different VM's as in One Webserver and other Database Server.
+
+I had ran the same configuration file within the servers and was thrown out with an error as Database error 2002:permission Denined.
+
+      > Had checked with the log files on both Database server and webserver.
+      > Checked with the connectivity of the database and its user which we had created to communicate with the server.
+      > Had tried buy disableing the firewall it dint workout.
+      > Making the changes with the Database permission for which i had given full access to the user.
+      > Checked with SElinux Permission and tried to disable and failed with same error.
+      > Also tried with the file permission to the httpd file and actual code file.
+      > Tried to disable the root password for the database.
+      > Lastly searched with the error on stack overflow and got the resolution with the exact result "Connect database error type 2002 permission denied"
+      > Got the exact fix with the issue and worked with SElinux security policies.
+                > getsebool -a | grep httpd
+                > Check for the httpd Network 
+                > setsebool -P httpd_can_network_connect_db 1
+
+After done with the final steps I had figured with the issue and fixed it.
