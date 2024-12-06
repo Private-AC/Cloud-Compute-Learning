@@ -62,7 +62,7 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 5 Dec 2024 > Terraform Variables in detail 
 
-6 Dec 2024 > 
+6 Dec 2024 > Done with Webserver Deployments on 2 different VM's the issue was with the httpd which was connecting locally but not through remote.
 
 
 
