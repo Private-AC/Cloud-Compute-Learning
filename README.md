@@ -64,6 +64,12 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 6 Dec 2024 > Done with Webserver Deployments on 2 different VM's the issue was with the httpd which was connecting locally but not through remote.
 
+7 Dec 2024 > Tried the same webserver deploymnet once again but this time i found a different error related to the gateway connectvity but coudnt fix due to the time 
+
+8 Dec 2024 > Tired the same webserver again this time i found an error related to connection to the database which was fixed by dissabling the firewall and added an additional line on the .env file. and the webserver is working as expected.
+
+
+
 
 
 
