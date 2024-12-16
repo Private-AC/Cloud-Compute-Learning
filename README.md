@@ -68,6 +68,8 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 8 Dec 2024 > Tired the same webserver again this time i found an error related to connection to the database which was fixed by dissabling the firewall and added an additional line on the .env file. and the webserver is working as expected.
 
+9 - 14 Dec 2024 > This week went very slow in learning as it is completely coding but tried to complete 45 % of terraform and started with Cloud Practioner from Kodekloud.
+
 
 
 
