@@ -70,6 +70,11 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 9 - 14 Dec 2024 > This week went very slow in learning as it is completely coding but tried to complete 45 % of terraform and started with Cloud Practioner from Kodekloud.
 
+16 Dec 2024 > Completed 50% of terraform course and comleted the basics of cloud computing and started with Security and compliance.
+            > Also checked out of Openstack Platform and got an info about know hows.
+
+17 Dec 2024 > Started practicing Terraform on a VM,
+
 
 
 
