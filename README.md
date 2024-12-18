@@ -73,7 +73,8 @@ Have documented completly which ever topics that was learnt everyday in the cour
 16 Dec 2024 > Completed 50% of terraform course and comleted the basics of cloud computing and started with Security and compliance.
             > Also checked out of Openstack Platform and got an info about know hows.
 
-17 Dec 2024 > Started practicing Terraform on a VM,
+17 Dec 2024 > Started practicing Terraform on a VM, Completed Security Compliance and Security Resources across AWS.
+            > AWS demo's on IAM, user creation, user access, permission, groups, roles, etc.
 
 
 
