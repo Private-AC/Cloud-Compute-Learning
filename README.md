@@ -76,6 +76,10 @@ Have documented completly which ever topics that was learnt everyday in the cour
 17 Dec 2024 > Started practicing Terraform on a VM, Completed Security Compliance and Security Resources across AWS.
             > AWS demo's on IAM, user creation, user access, permission, groups, roles, etc.
 
+18 Dec 2024 > AWS next set of services and networing realted to AWS.
+
+20 Dec 2024 > Learnt about Subnetting in networking.
+
 
 
 
