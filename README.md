@@ -80,6 +80,28 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 20 Dec 2024 > Learnt about Subnetting in networking.
 
+24 Dec 2024 > Learnt About VPC in detail and demo on VPC.
+
+25 Dec 2024 > VPC Practicals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
