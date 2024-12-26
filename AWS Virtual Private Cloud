@@ -5,7 +5,7 @@ In this demo we are going to set a new VPC and Deploy a VM within the VPC and ac
   Steps to create a VPC 
       > Create a VPC
       > Create a Subnet and associate the Subnet to VPC
-      > Create an Internet Gateway
+      > Create an Internet Gateway and Attach it to the VPC
       > Create a Route table so that the we can connect to the Internet.
 
   Steps to create VM or EC2 Instance in AWS.
