@@ -1,0 +1,29 @@
+VPC Practicals
+
+In this demo we are going to set a new VPC and Deploy a VM within the VPC and access it through Internet.
+
+  Steps to create a VPC 
+      > Create a VPC
+      > Create a Subnet and associate the Subnet to VPC
+      > Create an Internet Gateway
+      > Create a Route table so that the we can connect to the Internet.
+
+  Steps to create VM or EC2 Instance in AWS.
+      > AWS console 
+      > Search for EC2
+      > Launch Instance 
+      > Select the Image type we are going with Windows Server 
+      > Select the Newly created VPC in the networking section 
+      > By default it will select the subnet that was created under new VPC
+      > Select the default storage and procresser
+      > Create a new Keypair if you dont have one.
+      > Launch Instance 
+      > After 3/3 Status Check we will be able to access the EC2 Instance
+
+  Connecting to the EC2 Instance or VM.
+      > Select the Instance and then click on connect.
+      > As we are using windows server we are going with RDP to Access the server remotely
+      > Under RDP section check for passowrd it will request for Key which was created eariler upload and get the password.
+      > Login to the server with its Public IP and User details given in the section.
+      > After successfull login we can run 8.8.8.8 in cmd to confirm the connectivity of the server to the internet.
+      
