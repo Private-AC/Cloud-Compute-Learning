@@ -82,7 +82,7 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 24 Dec 2024 > Learnt About VPC in detail and demo on VPC.
 
-25 Dec 2024 > VPC Practicals
+25 & 26 Dec 2024 > VPC Practicals in detail like VPC, Subnets, Internetgateway, Routetable, Nat Gateway.
 
 
 
