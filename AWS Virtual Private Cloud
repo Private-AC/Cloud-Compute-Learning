@@ -26,4 +26,49 @@ In this demo we are going to set a new VPC and Deploy a VM within the VPC and ac
       > Under RDP section check for passowrd it will request for Key which was created eariler upload and get the password.
       > Login to the server with its Public IP and User details given in the section.
       > After successfull login we can run 8.8.8.8 in cmd to confirm the connectivity of the server to the internet.
+
+
+Next demo is on creating a VPC and attaching a NAT Gateway in the public subnet and able to access internet in from the private subnet.
+
+  Steps to create VPC 
+      > It is similar to that of the eailer steps but this time we are trying new procedure
+      > Under VPC Section click on Create VPC.
+      > VPC and More options 
+      > Here we can deploy all the requirement as per our needs which will create VPC, Isolate the Subnets as private & Public subnet and define IP's as custom range, IGW, Route Table.
+      > Once All this is done create Instance
+
+  Steps to create a VM are similar to the eariler.
+      > But here we are creating 2 VM's under one on Each Subnet i.e. on Private and Public.
+
+
+  Try to connect the VM's basically Public subnet acts as Jumpserver and we are going to connect the Private Subnet and connect it to the internet.
+
+  Steps to create a NAT Gateway.
+      > Under VPC section Below find NAT Gateway
+      > Create NATGateway
+      > Enter the details and under which subnet do we need to connect from pubic or private.
+      > Request for an elastic IP which is which is assoicate the subnet 
+      > Create Natgateway
+
+  Try and connect the Public Instance and try to access the Private Subnet 
+
+  We shall not be able to connect to the internet through the Private subnet as the route is not yet defined in the table once we define the same the connectivity will be established.
+
+Now the private subnet will be able to access internet from the public subnet throught the NAT Gateway.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
