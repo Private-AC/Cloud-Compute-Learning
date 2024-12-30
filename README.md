@@ -84,6 +84,7 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 25 & 26 Dec 2024 > VPC Practicals in detail like VPC, Subnets, Internetgateway, Routetable, Nat Gateway.
 
+27 Dec 2024 > Completed VPC and Started with Storage in AWS.
 
 
 
