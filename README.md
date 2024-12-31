@@ -86,7 +86,11 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 27 Dec 2024 > Completed VPC and Started with Storage in AWS.
 
+30 Dec 2024 > Terraform with AWS, AWS CLI interaction, CLI Basics.
 
+31 Dec 2024 > Terraform with AWS IAM, creating user, defining roles, assigining roles with Terraform in AWS.
+	    > Practice of Github logining with remote server and accessing the repo and working on the repo files.
+ 
 
 
 
