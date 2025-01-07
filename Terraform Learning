@@ -9,8 +9,13 @@ Things learnt so far in Terraform
       Terraform basics commands
       Terraform Providers
       Terraform Variables and types of variables
+      Terraform Output Variables and Life cycle rules
       Datasource and Resources
-      Terraform IAM, Dynamo DB. 
+      Terraform Version Constrains
+      Terraform State files
+      Terraform with AWS IAM, S3, Dynamo-DB
+      Terraform Remote state and State locking
+
       
 
 
