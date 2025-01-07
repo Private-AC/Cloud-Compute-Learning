@@ -98,7 +98,7 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 4 Dec 2024 > Documentation
 
-
+6 & 7 Dec 2024 > Terraform Practice locally and with AWS.
 
 
 
