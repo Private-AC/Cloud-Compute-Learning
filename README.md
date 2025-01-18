@@ -91,16 +91,16 @@ Have documented completly which ever topics that was learnt everyday in the cour
 31 Dec 2024 > Terraform with AWS IAM, creating user, defining roles, assigining roles with Terraform in AWS.
 	    > Practice of Github logining with remote server and accessing the repo and working on the repo files.
  
-2 Dec 2024 > Lab Setup in latops in both Office and Personal Laptop.
+2 Jan 2025 > Lab Setup in latops in both Office and Personal Laptop.
 	   > Setup that has been made Virtual Box, Vagrant, AWS CLI, Terraform Setup, etc.
 
-3 Dec 2024 > Terraform with IAM Policy, Defining Policy etc, practice of Terraform.
+3 Jan 2025 > Terraform with IAM Policy, Defining Policy etc, practice of Terraform.
 
-4 Dec 2024 > Documentation
+4 Jan 2025 > Documentation
 
-6 & 10 Dec 2024 > Terraform Practice locally and with AWS EC2 & S3.
+6 & 10 Jan 2025 > Terraform Practice locally and with AWS EC2 & S3.
 
-
+12 - 15 Jan 2025 > Terraform Practice with AWS VPc S3 etc.
 
 
 
