@@ -15,6 +15,7 @@ Things learnt so far in Terraform
       Terraform State files
       Terraform with AWS IAM, S3, Dynamo-DB
       Terraform Remote state and State locking
+      Terraform projects updates as working on the AWS services.
 
       
 
