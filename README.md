@@ -102,6 +102,13 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 12 - 15 Jan 2025 > Terraform Practice with AWS VPc S3 etc.
 
+20 - 24 Jan 2025 > AWS Storage EBS, EFS, S3, EC2, VPC, Security Group, NACL, EC2 troubleshooting practice.
+
+
+
+
+
+
 
 
 
