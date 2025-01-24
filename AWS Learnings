@@ -13,7 +13,11 @@ Things that i had learnt so far
       IAM (Idenitiy and Access Managment)
       AWS Global Infrastructure (Ragions, AZ's, Edge Location, Local Zones.)
       AWS Networking (VPC, Subnet, NAT, Security Groups, NACL.)
-            
+      AWS Storage (EBS, EFS, S3)
+      AWS Compute (EC2 instance types, pricing, availabiity)
+      AWS Lambda (Features, pricing, pro's and con's)
+      AWS Containerizing (EKS and ECS)
+                  
 
 
 
