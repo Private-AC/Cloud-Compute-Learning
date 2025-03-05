@@ -1,0 +1,29 @@
+In a typical data migration from on-prem to cloud we have 5 stages
+                    Preperation } onetime activity
+                    Planning } onetime activity 
+                    Migrate } Multiple stages and takes lot of time (Scripts for the infra, application, cronjobs, Cloud watch for monitoring)
+                    Monitor } Continues untill the application is stable
+                    Optimize } evaulate if the goal is completed
+
+lets say we have a monolithic application that we need to migrate to cloud
+    Prepration - Here we are going to start the plan for migration which are like we have to convert the application into micro services.
+    Planning   - Here we plan the phases as in which applications go into cloud first and last based on the critalicality of the applicaion and customer.
+               - Which cloud startegies to select.
+(AWS Cloud Startegies: Rehost (lift & shift {suits best for least dependencies shuch as H/W, OS, & Enviroment} Minimum cost optimization) 
+                       Replatform (similar to that of Rehost {but with the best practice of AWS such as HA & Scalability}  )
+                       Refactor/Rearchitecture (In this case as we are migrating the application as to the AWS by rearchitecture to latest and newest tech {such as compartable with AWS})
+                       Relocate (we must be aware of this as we are changing the platform and migration into cloud )
+                       Retain (Here we retain some of the business critical servers handeling secure information of the customer in on-permesies)
+                       Retire (Some application that the specific and not in use are not being moved to Cloud)
+                       Repurchase (Mostly out dated and not mush in use {usercase is specific})
+    Migration  - Has per our planning we are going to deploy in phases and monitor.
+    Monitoring - Based on the critalicality of your application like 1 or 2 months also get the feedback from the beta customers.
+    Improve and Optimize - evaulate if the goal is Achived.
+
+Database Migration:
+                    - Best Fit (Eg if your using a paticular database use its equalivant in AWS)
+                    - Backups (Loss of data during migration as the data to be migrated is huge)
+                              (Redirection of the customers to Pre-prod enviroment in case of an issue)
+
+
+    
