@@ -1,0 +1,99 @@
+These are some important git commands and its uses
+
+      > git --version (To verify the version of git installed on the PC)
+
+      > git status (Shows the status of the files which might be in staging or working area)
+      
+      > git add (after working on a file add the file to staging area for commit)
+      
+      > git commit -m "commit message" (Here the file will be commitied after all the changes are made and ready to push to github)
+      
+      > git log (To view the complete log of the commits from a paticualr account)
+      
+      > git log --oneline (Log in a single line)
+      
+      > git log --name-only (Check log by name only)
+
+Working with branchs in git 
+
+      > git branch new_branch_name (Create a new branch)
+
+      > git checkout branch_name (Change the working branch or switch the branch)
+
+      > git checkout -b new_branch_name (Create a new branch and select the branch)
+
+      > git branch -d branch_name (To delete a branch)
+
+      > git branch (list all the branches)
+
+      > git merge branch_name (To merge a commit of the other branch to one branch)
+
+Working with remote repo.
+
+      > git remote add origin https://link.of.remote.repo (origin here is an alais name which can be anything) (to add a remote repo to local machine)
+
+      > git remote -v (lists all the repo connect to the local machine)
+
+      > git clone ssh link (clone or copy the repo to local machine)
+
+      > git push origin master (master is the branch here) (to push your code to remote repo)
+
+      > git fetch origin master (Get the lastest update from the remote repo to be updated)
+
+      > git merge origin/master (to update the local branch with remote repo)
+
+      > git pull origin master (combination of both fetch & merge)
+
+Pull Request in git (PR)
+                          PR is used to not conflict the main branch with unessary commits, so before commiting the changes to the main branch we can raise a PR so that it can be reviewed and then pushed to master branch.
+
+Fork:
+      It is used for any anonomous user who wants to work on your repo can clone the repo and work on it but how ever he cannot commit his work for that he has to request for for and then that becomes a PR and then reviewed and merges.
+
+Rebasing:
+          It is a procress of adding a branch over another which basically copies the branch to another 
+            command: git rebase master 
+
+interactive rebase: 
+                    We are changing the last 4 commits into a single commit and this can be archived by using stash option.
+            command: git rebase -i HEAD~4 (the number can vary as per your required commits to be merged)
+
+Revert & Reset:
+          It is the procress of reverting and resetting of the commits that has been made to the repo.
+commands:
+        > git revert commit_id (it will revert back the pervious version of commit and logged in the history)
+        > git reset --soft HEAD~1 (to keep the change & udo commit number represents the latest commit)
+        > git reset --hard HEAD~1 (Will delete the commit and changes made)
+
+Stashing: 
+              it is a procress of moving files to bin area and can be reverted back.
+commands:
+        > git stash (it is used to move the file to bin)
+        > git stash pop (it will get back the file to staging area)
+        > git stash list (will list all the files in the stash area)
+        > git stash show stash_id (You can view the changes made to it)
+        > git stash pop stash_id (will move to stanging are)
+
+Reflog: 
+        Git reflog (It helps to get hte history of hte user and log files)
+
+        git reset --hard commit_id (to get bacj the hard reset file)
+
+Git hash-object
+                It is a command in git which is used to encript hte content of the file in git
+
+How does it work:
+
+        > git hash-object file_name (it will encript the file content)
+        > it will genrate a random #id for the file like eg:aebgwujjdafmheyaheb
+        > from the above #id the original file content will be stored as a file under ls ./git/ojects (named with the 2letters from #id)
+        > git cat-file -p #id (to view the content)
+
+
+
+
+
+
+
+
+
