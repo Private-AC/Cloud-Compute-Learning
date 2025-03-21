@@ -1,0 +1,43 @@
+Here we are going to work with some of the basic docker commands and its uses.
+
+Docker Commands:
+
+	> docker run ubuntu (Will run an instance of ubuntu server on a container)
+	> docker ps ( Will list all the running container instance with some basic info )
+	> docker ps -a (It will list all the containers running and exited )
+	> docker stop container_id/name (Will stop the running instnace on successfull stop it will print the container name)
+	> docker rm container_id/name (Will remove docker container on successful rm will print the container name/id )
+	> docker images (Will list all the images available locally)
+	> docker rmi image_name (Will delete the image from the local storage)
+	> docker pull image_name (will download the image from docker hub)
+
+Docker Run Command options:
+	
+	> docker run -d images-id/contaniner (It will run in background or in detached mode )
+	> docker run image-id (will run in forground and we cannot work on anything else untill it is completed or exited)
+	> docker attach (will run the background procress into foreground)
+
+Docker append command:
+	
+	> docker run image_id command_to_execute (It will run the image and execute the command at the same time)
+	> docker exec docker-name command_to_execute (It will execute the command on the running docker instance)
+	
+Docker Port Mapping:
+
+	> docker run -p docker_ip:port:container_ip:port docker_container to run (It is basically forwarding the route of the container through docker to outside world by using the available port numbers)
+	> eg: docker run -p 80:5000 docker/webapp
+
+Docker Volume Mapping:
+	
+	> docker run -v /local/file/path:/container/file/path image (This mostly used as a backup and can be reused as required)
+	
+Docker Inspect and Logs
+
+	> docker logs conatiner_name/id (to see the logs on the conatiner)
+	> docker inspect container_id (to see the container details)
+
+
+
+
+
+
