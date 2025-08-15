@@ -104,6 +104,38 @@ Have documented completly which ever topics that was learnt everyday in the cour
 
 20 - 24 Jan 2025 > AWS Storage EBS, EFS, S3, EC2, VPC, Security Group, NACL, EC2 troubleshooting practice.
 
+Feb & March 2025 > Leant Ansible from Udemy with Linux TV Channel
+			> Introduction to Ansible: 
+   										Examples: ping, copying files, restarting services
+										Modules: ping, command, shell, copy, service, package, etc.
+			> Ansible Installation and Setup: 
+   												Installing Ansible (on Linux/macOS/Windows WSL)
+												Inventory file basics (static and dynamic inventories)
+												Running your first ansible command   												
+   			> Ad-Hoc Commands:
+	  							Examples: ping, copying files, restarting services
+								Modules: ping, command, shell, copy, service, package, etc.
+	  		> Playbooks: 
+	 						Learning YMAL and its Syntax
+							Structure: hosts, tasks, vars, handlers
+							Running playbooks with ansible-playbook
+	 		> Variables: 
+							Defining and using variables
+							Variable precedence
+							Group and host variables
+							Facts (ansible_facts)
+			> Roles:
+   						Creating and using roles (ansible-galaxy init)
+						Role directory structure
+						Role dependencies
+						Sharing roles via Ansible Galaxy
+	  		> Handlers and Notifications:
+	 										Creating handlers to respond to changes
+											Using notify with services and configurations
+	  		> Ansible Configuration (ansible.cfg)
+	 												Setting default paths, forks, timeouts, etc.
+													Centralized configuration management
+	 		
 
 
 
