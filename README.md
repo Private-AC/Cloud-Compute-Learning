@@ -135,6 +135,17 @@ Feb & March 2025 > Leant Ansible from Udemy with Linux TV Channel
 	  		> Ansible Configuration (ansible.cfg)
 	 												Setting default paths, forks, timeouts, etc.
 													Centralized configuration management
+
+Nov 2025 
+
+Zabbix Installtaion
+
+Done throught some the zabbix documentation and installed Zabbix completely END to END on hte local virtual machine and tested few alerts on the host machine 
+	> Have update the documentation of the implementation.
+
+Grafana with Prometheus + Node_exporter + Blackbox
+
+
 	 		
 
 
