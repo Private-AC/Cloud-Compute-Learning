@@ -1,0 +1,156 @@
+Overview
+Grafana is a tool used to create dashboards and visualize data. It can pull information from many different sources, no matter where they’re hosted. You can build your own dashboards from scratch or use ready-made templates if you want something quick.
+To actually show data in Grafana, you need something to collect that data. That’s where Prometheus comes in. Prometheus gathers metrics from different systems, but it usually needs exporters to get those metrics.
+
+Common Exporters.
+Node Exporter.
+This one collects system-level information from a machine — things like 
+CPU Usage, Memory, Disk space, and other hardware or resource metrics.
+
+Blackbox Exporter.
+
+The Blackbox Exporter checks if a service or website is reachable. It can monitor things like 
+Uptime, Response status, and SSL certificate expiry.
+
+Deployment of Grafana & Prometheus.
+Grafana OSS (Open Source Software)
+
+Grafana Cloud (Managed by Grafana)
+Deployment of Grafana OSS
+How to deploy Grafana OSS on the Local machine I considered 2 Virtual Machines from AWS.
+
+With Following Spec Config 
+Application Server (We are going with a Apache Web Server, Node Exporter)
+
+Linux Server (Amazon Linux OS)
+t2 micro Instance Type
+Keep rest to default 
+Security Group (Some Custom Ports like 3000-9000, 443, 80)
+Storage 8GB
+Launch Instance 
+
+Monitoring Server (To deploy Prometheus, Grafana & Blackbox Exporter)
+Linux Server (Amazon Linux OS)
+t2 small Instance Type
+Keep rest to default 
+Same security Group
+Storage 20GB 
+Launch Instance 
+
+Application Server
+We need to login to the server through Putty or mobaxterm
+Install the following in order to start the Webserver and Node Exporter
+
+Installing Apache Web Server
+
+sudo yum install -y httpd
+After installation start the service 
+sudo systemctl start httpd
+
+You can test the connectivity of the webserver by 
+Open browser and enter the ip,adddress:80 if you will see startup page of Apache Server
+
+
+Installing Node Exporter 
+
+wget https://github.com/prometheus/node_exporter/releases/download/v1.10.2/node_exporter-1.10.2.linux-amd64.tar.gz
+tar xvf node_exporter-1.10.2.linux-amd64.tar.gz (Extract the tar file)
+cd node_exporter-1.10.2.linux-amd64 
+./node_exporter & (This command will help it to run of node_exporter in background)
+To verify that the node_exporter is running open browser and run ip.address:9100
+
+You can see the node exporter webpage.
+
+Monitoring Server 
+After logging into the server 
+Install Prometheus, Blackbox & Grafana
+
+
+Installing Prometheus 
+wget https://github.com/prometheus/prometheus/releases/download/v3.8.0-rc.1/prometheus-3.8.0-rc.1.linux-amd64.tar.gz
+tar xvf prometheus-3.8.0-rc.1.linux-amd64.tar.gz
+cd prometheus-3.8.0-rc.1.linux-amd64
+ls (to list all the files)
+vi prometheus.yml (This is the config file where we can make changes)
+this is how a config file looks like 
+
+This config file line tells us that it is monitoring the server where Prometheus is hosted.
+
+Now we need to add the same line of code to monitor our application server.
+
+Make sure the indentation is right as this is an ymal file to avoid errors
+
+- job_name: "Application Server"
+  static_configs:
+    - targets: ["Application server IP:9090"]
+save the config file and run Prometheus.
+
+./prometheus (procress will run in the forground)
+./prometheus & (to run in Background)
+To test the if is running Prometheus on browser run monitoring server ip.address:9090 you can see similar page like this 
+
+Installing Blackbox
+
+sudo wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.27.0/blackbox_exporter-0.27.0.linux-amd64.tar.gz
+sudo tar xvf blackbox_exporter-0.27.0.linux-amd64.tar.gz
+cd blackbox_exporter-0.27.0.linux-amd64
+./blackbox_exporter &
+Now go back to the Prometheus Config File and add following lines at the end.
+
+scrape_configs:
+  - job_name: 'blackbox'
+    metrics_path: /probe
+    params:
+      module: [http_2xx] # This must match a module in your blackbox.yml
+    static_configs:
+      - targets:
+        - http://example.com # Target to be probed for testing you can add any website
+        - https://google.com # Target to be probed for testing you can add any website
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 127.0.0.1:9115  # The blackbox exporter's real hostname:port. Your Monitoring Server IP:9115
+This is how the final config file looks like
+
+Test the same on the browser to verify Monitoring Server ip.address:9115.
+
+Installing Grafana 
+
+sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.3.0/grafana-enterprise_12.3.0_19497075765_linux_amd64.rpm
+After installation start the server demon and the service itself
+
+sudo /bin/systemctl demon grafana
+sudo systemctl start granafa
+To verify open the browser and run monitoring server ip.address:3000
+
+You will see Grafana Login Page 
+
+default user details 
+User ID - admin
+Password - admin
+
+Click on Add your first data source.
+
+Search for Prometheus and add the server url.
+
+image-20251128-082254.png
+Then scroll to the bottom and click on save and test.
+
+From the above image click on dashboard 
+
+Click on New  >  Import 
+
+Search for few pre-built dashboard from browser for Node_Exporter add copy the ID 
+
+Paste the Copied ID and Load (ID is 1860)
+
+You can find the similar Dashboard View for Node Exporter
+
+
+Similarly load in the same fashion for Blackbox
+
+You can find the same view as below 
+
